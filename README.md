@@ -1,11 +1,18 @@
-# LNKS
+# LINKS
 
 Better default link styles for your css.
 Because HAVE YOU SEEN THE BLUE AND RED they chose? Garish at best.
 
-I don't even want to explain how to use this. I trust you have time to
-read8 lines of code.
+I trust you have time to read 8 lines of code.
 
+## Dev setup
+
+If you want to modify sass/links.scss at all you can use the
+provided gulp tasks. To do that:
+
+```
+cd links && npm install . && gulp
+```
 
 # Author
 

@@ -1,11 +1,10 @@
-/* ==========================================================================
-   LNKS
-
+/*
+   LINKS - v0.0.1
    "Smarter defaults for links"
 
-   ========================================================================== */
+*/
+
 a {
-  -webkit-transition: .4s all;
   transition: .4s all;
   color: #30BBDB;
 
@@ -14,5 +13,4 @@ a {
   &:hover   { color: #004EAB; }
   &:active  { color: #C4E3E0; }
 }
-
 
