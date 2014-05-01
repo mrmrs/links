@@ -4,20 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      LNKS - Better default link styles
+      LINKS - Better default link styles
     </title>
     <meta name="author" content="mrmrs">
     <meta name="description" content="LNKS - CSS for better default link styles.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="links.css">
+    <link rel="stylesheet" href="css/links.css">
     <style>
       h1 { font-weight: 100;  font-size: 16px; text-align: center; margin-top: 80px; }
-      a { font-size: 48px; text-align: center; display: block; width: 100%; padding: 40px 0; }
+      p { line-height: 1.6; }
+      .prose-example p { font-size: 24px; max-width: 32em; margin: 0 auto; padding: 1rem; }
     </style>
   </head>
   <body>
      <h1>Touch it... I know you want to.</h1>
-     <a href="#" title="yes">A Sample Text Link</a>
+     <a href="#" title="A sample text link">A Sample Text Link</a>
+     <a href="#" title="yes" class="link">A Sample Text Link</a>
+     <div class="prose-example">
+       <h1>Links in prose</h1>
+       <p>
+         I think links in browsers should be better by default. The default colors are horrid. The lack of
+         subtle animation between color changes leaves all my users sitting around without 'delight'.
+         So <a href="http://github.com/mrmrs/links" title="Links by @mrmrs">links.css</a> is a result of
+         typing the same silly css over and over again. It's a very small css module that gives you
+         better links by default. It is unobtrusive and degrades gracefully across every browser.
+       </p>
+     </div>
   </body>
 </html>
 
