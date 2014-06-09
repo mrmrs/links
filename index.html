@@ -4,32 +4,103 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      LINKS - Better default link styles
+      links.css - Better default link styles
     </title>
     <meta name="author" content="mrmrs">
-    <meta name="description" content="LNKS - CSS for better default link styles.">
+    <meta name="description" content="LINKS - CSS for better default link styles.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/links.css">
     <style>
-      h1 { font-weight: 100;  font-size: 16px; text-align: center; margin-top: 80px; }
+
+      body, html { margin: 0; padding: 0; }
+      header { padding-left: 1em; padding-right: 1em; padding-top: 2em; }
+      main, footer  { padding: 1em; }
+      pre { overflow-y: auto; }
+      .man { margin: 0; }
+      .tc { text-align: center; }
+      .f1 { font-size: 24px; }
+      .f2 { font-size: 20px; }
+      .f3 { font-size: 16px; }
+
+
+      .ss { font-family: avenir, helvetica, arial, sans-serif; }
+      .title { text-transform: uppercase; letter-spacing: .2em; font-weight: 100; }
+
+      h1 { font-weight: 100;  font-size: 16px; margin-top: 80px; }
       p { line-height: 1.6; }
-      .prose-example p { font-size: 24px; max-width: 32em; margin: 0 auto; padding: 1rem; }
+
+      .g { max-width: 44em; margin: 0 auto; }
+      .bb { border-bottom: 1px dotted #666; padding-bottom: 2em; } 
+      .bt { border-top: 1px dotted #666; padding-top: 2em; } 
+
+      .pt { padding-top: 2em; }
     </style>
   </head>
   <body>
-     <h1>Touch it... I know you want to.</h1>
-     <a href="#" title="A sample text link">A Sample Text Link</a>
-     <a href="#" title="yes" class="link">A Sample Text Link</a>
-     <div class="prose-example">
-       <h1>Links in prose</h1>
-       <p>
-         I think links in browsers should be better by default. The default colors are horrid. The lack of
-         subtle animation between color changes leaves all my users sitting around without 'delight'.
-         So <a href="http://github.com/mrmrs/links" title="Links by @mrmrs">links.css</a> is a result of
-         typing the same silly css over and over again. It's a very small css module that gives you
-         better links by default. It is unobtrusive and degrades gracefully across every browser.
-       </p>
-     </div>
+    <header class="bb">
+      <h1 class="f1 tc man">links.css</h1>
+      <h2 class="ss tc title f3">For nicer defaults</h2>
+    </header>
+    <main class="g">
+      <div class="pt">
+        <h2 class="title">The palette</h2>
+        <a href="#" style="color:#005BAC" class="f1 link"> :link</a><br>
+        <a href="#" style="color:#980AAE" class="f1 link"> :visited</a><br>
+        <a href="#" style="color:#007BE6" class="f1 link"> :hover</a><br>
+        <a href="#" style="color:#7fdbff" class="f1 link"> :active</a>
+      </div>
+      <div class="pt">
+        <h2 class="title">Examples</h2>
+        <a href="http://mrmrs.io"       title="A sample text link" class="f1">underlined link</a><br><br>
+        <a href="http://mrmrs.io/links" title="yes"                class="f1 link">simple link</a>
+      </div>
+      <div class="prose-example">
+        <h1 class="tc">Links in prose</h1>
+        <p class="f1">
+          Links in browsers should be better by default. The default colors are horrid. The lack of
+          subtle animation between changes leaves all my users sitting around without 'delight'.
+          So <a href="http://github.com/mrmrs/links" title="Links by @mrmrs">links.css</a> is a result of
+          typing the same silly css over and over again. It's a very small css module that gives you
+          better links by default. It is unobtrusive and degrades gracefully across every browser.
+        </p>
+      </div>
+      <section>
+      <h1>The Code</h1>
+      <h2>html</h2>
+<pre>
+<code>
+&lt;a href="http://mrmrs.io" title="A sample text link"&gt;underlined link&lt;/a&gt;
+&lt;a href="http://mrmrs.io/links" title="A sample text link" class="link"&gt;simple link&lt;/a&gt;
+</code>
+</pre>
+
+      <h2>css</h2>
+<pre>
+<code>
+
+a { 
+  -webkit-transition: color .4s; 
+  transition: color .4s; 
+  color: #30BBDB; 
+}
+
+a:link {    color: #30BBDB; }
+a:visited { color: #2D243B; }
+a:hover {   color: #004EAB; }
+a:active {  color: #C4E3E0; }
+
+.link { text-decoration: none; }
+
+</code>
+</pre>
+</section>
+    </main>
+    <footer class="bt">
+      <div class="g">
+        <p>Built by <a href="http://mrmrs.io" title="adam morse - designer in sf" class="link">mrmrs</a></p>
+        <small>license: MIT</small>
+      </div>
+    </footer>
   </body>
 </html>
 
