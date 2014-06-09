@@ -8,6 +8,7 @@
     "html",
     "links",
     "sass",
+    "oocss",
     "gulp",
     "colors",
     "design"
@@ -39,7 +40,7 @@
     { "name": "@mrmrs", "email": "hi@mrmrs.cc" }
   ],
   "engines": {
-    "node": "0.10.22"
+    "node": "=>0.10.22"
   },
   "license": "MIT"
 }
