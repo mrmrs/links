@@ -1,10 +1,13 @@
-/* LINKS - v0.0.1 "Smarter defaults for links"
-
+/* links.css - v0.0.1 - "Smarter defaults for links" License MIT
 */
-a { -webkit-transition: .4s all; transition: .4s all; color: #30BBDB; }
-a:link { color: #30BBDB; }
-a:visited { color: #2D243B; }
-a:hover { color: #004EAB; }
-a:active { color: #C4E3E0; }
+a { -webkit-transition: color .4s; transition: color .4s; color: #265C83; }
+
+a:link { color: #265C83; }
+
+a:visited { color: #980AAE; }
+
+a:hover { color: #007BE6; }
+
+a:active { color: #7FDBFF; }
 
 .link { text-decoration: none; }
