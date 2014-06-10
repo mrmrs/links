@@ -16,7 +16,9 @@
       header { padding-left: 1em; padding-right: 1em; padding-top: 2em; }
       main, footer  { padding: 1em; }
       pre { overflow-y: auto; }
-      .man { margin: 0; }
+      h1, h3 { font-weight: 100;  font-size: 16px; }
+      p { line-height: 1.6; }
+
       .tc { text-align: center; }
       .f1 { font-size: 24px; }
       .f2 { font-size: 20px; }
@@ -26,20 +28,64 @@
       .ss { font-family: avenir, helvetica, arial, sans-serif; }
       .title { text-transform: uppercase; letter-spacing: .2em; font-weight: 100; }
 
-      h1 { font-weight: 100;  font-size: 16px; margin-top: 80px; }
-      p { line-height: 1.6; }
 
       .g { max-width: 44em; margin: 0 auto; }
       .bb { border-bottom: 1px dotted #666; padding-bottom: 2em; } 
       .bt { border-top: 1px dotted #666; padding-top: 2em; } 
+      .man { margin: 0; }
+      .mt { margin-top: 4em; }
 
+      .pt1 { padding-top: 1em; }
       .pt { padding-top: 2em; }
+      .pb { padding-bottom: 2em; }
+
+      .btn,.btn:link,.btn:visited {
+        text-decoration: none;
+        color: #222; 
+        padding: .75em .75em; 
+        font-family: avenir, helvetica, arial, sans-serif;
+        border: 1px solid;
+        border-radius: .3em;
+        font-size: 12px; 
+        text-transform: uppercase;
+        letter-spacing: .13em;
+        transition: all .4s;
+        -webkit-transition: all .4s;
+      }
+
+      .btn:hover { 
+        color: #999;
+        border-color: #999;
+      }
+
+      .btn--twitter { background-size: contain; padding-left: 2em!important; }
+      .btn--github {  background: red; height: 20px; width: 20px; }
+
+      .btn--twitter { background:url(svg/twitter.svg) no-repeat 0 0; }
+      .btn--github  { background:url(svg/octocat.svg) no-repeat 0 0!important; }
+
+      a:hover i { opacity: 0.6; }
+
+      .mrs { margin-right: 1em; }
+
     </style>
   </head>
   <body>
     <header class="bb">
       <h1 class="f1 tc man">links.css</h1>
       <h2 class="ss tc title f3">For nicer defaults</h2>
+      <div class="g tc pt1 pb">
+
+        <a href="http://github.com/mrmrs/links" class="mrs btn" target="_blank">
+          <i class="btn--github"> </i>
+          View on github
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?text=Better default styles for links:&amp;url=http://mrmrs.io/links/" target="_blank" class="btn">
+          <i class="btn--twitter"> </i>
+          Tweet This
+        </a>
+      </div>
     </header>
     <main class="g">
       <div class="pt">
@@ -51,11 +97,12 @@
       </div>
       <div class="pt">
         <h2 class="title">Examples</h2>
+        <h3>Two styles</h3>
         <a href="http://mrmrs.io"       title="A sample text link" class="f1">underlined link</a><br><br>
         <a href="http://mrmrs.io/links" title="yes"                class="f1 link">simple link</a>
       </div>
       <div class="prose-example">
-        <h1 class="tc">Links in prose</h1>
+        <h3 class="mt">Links in prose</h3>
         <p class="f1">
           Links in browsers should be better by default. The default colors are horrid. The lack of
           subtle animation between changes leaves all my users sitting around without 'delight'.
@@ -93,6 +140,12 @@ a:active {  color: #C4E3E0; }
 
 </code>
 </pre>
+      <p>
+        <em>Note:</em><br>
+        This is such a small css module you'll want to include it as a partial in your 
+        preprocessor setup - or you'll want to just copy the css into the top of your 
+        sites css file.
+      </p>
 </section>
     </main>
     <footer class="bt">
