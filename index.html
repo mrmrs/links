@@ -11,12 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/links.css">
     <style>
-
-      body, html { margin: 0; padding: 0; }
+      code { color: #777; }
+      body, html { margin: 0; padding: 0; color: #000; }
       header { padding-left: 1em; padding-right: 1em; padding-top: 2em; }
       main, footer  { padding: 1em; }
       pre { overflow-y: auto; }
       h1, h3 { font-weight: 100;  font-size: 16px; }
+      .thin { font-weight: 100;}
       p { line-height: 1.6; }
 
       .tc { text-align: center; }
@@ -72,8 +73,8 @@
   </head>
   <body>
     <header class="bb">
-      <h1 class="f1 tc man">links.css</h1>
-      <h2 class="ss tc title f3">For nicer defaults</h2>
+      <h1 class="f1 tc man pt">links.css</h1>
+      <h2 class="ss tc title f3 pb">For nicer defaults</h2>
       <div class="g tc pt1 pb">
 
         <a href="http://github.com/mrmrs/links" class="mrs btn" target="_blank">
@@ -85,35 +86,51 @@
           <i class="btn--twitter"> </i>
           Tweet This
         </a>
+        <br>
+        <br>
+        <br>
+        <small>- install with npm -</small>
+<pre>
+<code class="f2">
+npm install --save-dev links.css
+</code>
+</pre>
       </div>
     </header>
     <main class="g">
+      <h2 class="title pt">About</h2>
+      <p class="f1">
+        For <a href="http://www.w3.org/TR/html401/present/styles.html" class="link">default link styles</a> I want - nice, subtle color animations. 
+        I want nicer colors that meet accessibility guidelines.
+        And I don't want visited links to be styled differently then regular links. 
+        This css modules solves those problems for me in a tidy 155B of css. 
+      </p>
       <div class="pt">
         <h2 class="title">The palette</h2>
         <a href="#" style="color:#005BAC" class="f1 link"> :link</a><br>
-        <a href="#" style="color:#980AAE" class="f1 link"> :visited</a><br>
-        <a href="#" style="color:#007BE6" class="f1 link"> :hover</a><br>
-        <a href="#" style="color:#7fdbff" class="f1 link"> :active</a>
+        <a href="#" style="color:#005BAC" class="f1 link"> :visited</a><br>
+        <a href="#" style="color:#7fdbff" class="f1 link"> :hover</a><br>
+        <a href="#" style="color:#007BE6" class="f1 link"> :active</a>
       </div>
       <div class="pt">
         <h2 class="title">Examples</h2>
-        <h3>Two styles</h3>
         <a href="http://mrmrs.io"       title="A sample text link" class="f1">underlined link</a><br><br>
         <a href="http://mrmrs.io/links" title="yes"                class="f1 link">simple link</a>
       </div>
       <div class="prose-example">
         <h3 class="mt">Links in prose</h3>
         <p class="f1">
-          Links in browsers should be better by default. The default colors are horrid. The lack of
-          subtle animation between changes leaves all my users sitting around without 'delight'.
+          Links in browsers should be better by default. 
+          The <a href="http://clrs.cc" class="link">default colors</a> are horrid. The lack of
+          subtle transitions between state changes leaves all my users sitting around without 'delight'.
           So <a href="http://github.com/mrmrs/links" title="Links by @mrmrs">links.css</a> is a result of
           typing the same silly css over and over again. It's a very small css module that gives you
           better links by default. It is unobtrusive and degrades gracefully across every browser.
         </p>
       </div>
       <section>
-      <h1>The Code</h1>
-      <h2>html</h2>
+        <h2 class="title mt">The Code</h2>
+      <h2 class="thin f2 pt1">html</h2>
 <pre>
 <code>
 &lt;a href="http://mrmrs.io" title="A sample text link"&gt;underlined link&lt;/a&gt;
@@ -121,26 +138,26 @@
 </code>
 </pre>
 
-      <h2>css</h2>
-<pre>
+      <h2 class="thin f2 pt1">css</h2>
+<pre class="pb">
 <code>
-
-a { 
-  -webkit-transition: color .4s; 
-  transition: color .4s; 
-  color: #30BBDB; 
+a {
+  transition: color .4s;
+  color: #265C83;
 }
 
-a:link {    color: #30BBDB; }
-a:visited { color: #2D243B; }
-a:hover {   color: #004EAB; }
-a:active {  color: #C4E3E0; }
+a:link, 
+a:visited { color: #265C83; }
+a:hover   { color: #7FDBFF; }
+a:active  { 
+  transition: color .3s;
+  color: #007BE6; 
+}
 
 .link { text-decoration: none; }
-
 </code>
 </pre>
-      <p>
+      <p class="f3">
         <em>Note:</em><br>
         This is such a small css module you'll want to include it as a partial in your 
         preprocessor setup - or you'll want to just copy the css into the top of your 
