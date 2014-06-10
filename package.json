@@ -1,12 +1,13 @@
 {
-  "name": "links",
-  "version": "0.0.1",
+  "name": "links.css",
+  "version": "0.0.2",
   "homepage": "http://mrmrs.github.io/links",
   "description": "Better default styles for links",
   "keywords": [
     "css",
     "html",
     "links",
+    "accessibility",
     "sass",
     "oocss",
     "gulp",
@@ -29,7 +30,8 @@
     "url": "http://github.com/mrmrs/links.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/links/issues"
+    "url": "https://github.com/mrmrs/links/issues",
+    "email": "hi@mrmrs.cc"
   },
   "author": {
     "name": "@mrmrs",
