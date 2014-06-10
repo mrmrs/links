@@ -8,10 +8,13 @@ a {
   color: #265C83;
 }
 
-a:link    { color: #265C83; }
-a:visited { color: #980AAE; }
-a:hover   { color: #007BE6; }
-a:active  { color: #7FDBFF; }
+a:link, 
+a:visited { color: #265C83; }
+a:hover   { color: #7FDBFF; }
+a:active  { 
+  transition: color .3s;
+  color: #007BE6; 
+}
 
 .link { text-decoration: none; }
 
