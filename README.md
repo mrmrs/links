@@ -1,9 +1,29 @@
-# LINKS
+# links.css
 
-Better default link styles for your css.
+Better default link styles.
 Because HAVE YOU SEEN THE BLUE AND RED they chose? Garish at best.
 
-I trust you have time to read 8 lines of code.
+#### Featuring
+
+* subtle animations
+* better colors
+* :link & :visited are styled with the same color
+
+And only 153B of css
+
+## Get the code
+
+Clone the repo
+```bash
+git clone git@github.com:mrmrs/links.git
+```
+or install with npm
+```bash
+npm install --save-dev links.css
+```
+
+Then copy the contents of css/links.css into your sites css file.
+That's all their is to it.
 
 ## Dev setup
 
