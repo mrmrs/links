@@ -39,10 +39,16 @@
     "url": "http://mrmrs.cc"
   },
   "contributors": [
-    { "name": "@mrmrs", "email": "hi@mrmrs.cc" }
+    {
+      "name": "@mrmrs",
+      "email": "hi@mrmrs.cc"
+    }
   ],
   "engines": {
     "node": "=>0.10.22"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  }
 }
