@@ -1,1 +1,1 @@
-a{-webkit-transition:color .4s; transition:color .4s; color:#265C83;}a:link,a:visited{color:#265C83;}a:hover{color:#7FDBFF;}a:active{-webkit-transition:color .3s;transition:color .3s;color:#007BE6;}.link{text-decoration:none;}
+a,a:link,a:visited{color:#265C83}a{transition:color .4s;-webkit-transition:color .4s;-moz-transition:color .4s;-o-transition:color .4s}a:hover{color:#7FDBFF}a:active{color:#007BE6;transition:color .3s;-webkit-transition:color .3s;-moz-transition:color .3s;-o-transition:color .3s}.link{text-decoration:none}
