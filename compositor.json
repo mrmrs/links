@@ -1,0 +1,69 @@
+{
+  "name": "mrmrs/links",
+  "version": "0.1.0",
+  "libraries": {
+    "xv": "1.0.0"
+  },
+  "style": {
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      48,
+      32,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "body": {
+      "margin": 0
+    },
+    "heading": {
+      "fontFamily": "inherit",
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "fontStyle": null,
+      "textTransform": null,
+      "letterSpacing": null,
+      "h0": {},
+      "h1": {},
+      "h2": {},
+      "h3": {},
+      "h4": {},
+      "h5": {},
+      "h6": {}
+    },
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "border": "#ddd",
+      "primary": "#08e",
+      "secondary": "#1b3c55",
+      "highlight": "#ff0073",
+      "muted": "#e8f0f7"
+    },
+    "border": {
+      "width": 2,
+      "radius": 2
+    }
+  },
+  "content": [
+    {
+      "component": "header/BasicHeader",
+      "heading": "Hello world",
+      "text": "Welcome to your new Compositor site. Edit the styles and content then build to get started."
+    }
+  ]
+}
