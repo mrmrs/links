@@ -70,14 +70,24 @@
           "text": "Follow me on twitter"
         },
         {
-          "href": "",
-          "text": ""
+          "href": "http://github.com",
+          "text": "View on GitHub"
         }
       ]
     },
     {
       "component": "section/MutedBigSection",
-      "heading": "Untitled section"
+      "heading": "Social",
+      "links": [
+        {
+          "href": "twitter.com/mrmrs_",
+          "text": "Follow me on twitter"
+        },
+        {
+          "href": "http://github.com",
+          "text": "View on GitHub"
+        }
+      ]
     }
   ]
 }
