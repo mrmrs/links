@@ -63,7 +63,21 @@
     {
       "component": "header/BasicHeader",
       "heading": "Hello world",
-      "text": "Welcome to your new Compositor site. Edit the styles and content then build to get started."
+      "text": "Welcome to your new Compositor site. Edit the styles and content then build to get started.",
+      "links": [
+        {
+          "href": "twitter.com/mrmrs_",
+          "text": "Follow me on twitter"
+        },
+        {
+          "href": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "component": "section/MutedBigSection",
+      "heading": "Untitled section"
     }
   ]
 }
