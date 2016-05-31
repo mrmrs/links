@@ -91,7 +91,26 @@
     },
     {
       "component": "footer/BasicFooter",
-      "heading": "Untitled"
+      "heading": "Copyright 2016",
+      "links": [
+        {
+          "href": "http://twitter.com/mrmrs_",
+          "text": "Twitter"
+        },
+        {
+          "href": "http://github.com/mrmrs",
+          "text": "GitHub"
+        },
+        {
+          "href": "http://unsplash.com/mrmrs",
+          "text": "Unsplash"
+        },
+        {
+          "href": "http://instagram.com/mrmrs_",
+          "text": "Instagram"
+        }
+      ],
+      "meta": "This is my own personal playground site."
     }
   ]
 }
