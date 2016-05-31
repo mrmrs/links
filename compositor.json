@@ -90,7 +90,7 @@
       ]
     },
     {
-      "component": "section/BigSection",
+      "component": "footer/BasicFooter",
       "heading": "Untitled"
     }
   ]
