@@ -76,7 +76,7 @@
       ]
     },
     {
-      "component": "section/MutedBigSection",
+      "component": "section/SecondarySplitSection",
       "heading": "Social",
       "links": [
         {
