@@ -61,7 +61,7 @@
   },
   "content": [
     {
-      "component": "quote/BasicQuote",
+      "component": "header/HighlightBannerHeader",
       "heading": "Hello world",
       "text": "Welcome to your new Compositor site. Edit the styles and content then build to get started.",
       "links": [
@@ -88,6 +88,10 @@
           "text": "View on GitHub"
         }
       ]
+    },
+    {
+      "component": "section/BigSection",
+      "heading": "Untitled"
     }
   ]
 }
