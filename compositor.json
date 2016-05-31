@@ -61,7 +61,7 @@
   },
   "content": [
     {
-      "component": "header/BasicHeader",
+      "component": "quote/BasicQuote",
       "heading": "Hello world",
       "text": "Welcome to your new Compositor site. Edit the styles and content then build to get started.",
       "links": [
