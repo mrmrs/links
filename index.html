@@ -1,176 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>
-      links.css - Better default link styles
-    </title>
-    <meta name="author" content="mrmrs">
-    <meta name="description" content="LINKS - CSS for better default link styles.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/links.css">
-    <style>
-      code { color: #777; }
-      body, html { margin: 0; padding: 0; color: #000; }
-      header { padding-left: 1em; padding-right: 1em; padding-top: 2em; }
-      main, footer  { padding: 1em; }
-      pre { overflow-y: auto; }
-      h1, h3 { font-weight: 100;  font-size: 16px; }
-      .thin { font-weight: 100;}
-      p { line-height: 1.6; }
-
-      .tc { text-align: center; }
-      .f1 { font-size: 24px; }
-      .f2 { font-size: 20px; }
-      .f3 { font-size: 16px; }
-
-
-      .ss { font-family: avenir, helvetica, arial, sans-serif; }
-      .title { text-transform: uppercase; letter-spacing: .2em; font-weight: 100; }
-
-
-      .g { max-width: 44em; margin: 0 auto; }
-      .bb { border-bottom: 1px dotted #666; padding-bottom: 2em; } 
-      .bt { border-top: 1px dotted #666; padding-top: 2em; } 
-      .man { margin: 0; }
-      .mt { margin-top: 4em; }
-
-      .pt1 { padding-top: 1em; }
-      .pt { padding-top: 2em; }
-      .pb { padding-bottom: 2em; }
-
-      .btn,.btn:link,.btn:visited {
-        text-decoration: none;
-        color: #222; 
-        padding: .75em .75em; 
-        font-family: avenir, helvetica, arial, sans-serif;
-        border: 1px solid;
-        border-radius: .3em;
-        font-size: 12px; 
-        text-transform: uppercase;
-        letter-spacing: .13em;
-        transition: all .4s;
-        -webkit-transition: all .4s;
-      }
-
-      .btn:hover { 
-        color: #999;
-        border-color: #999;
-      }
-
-      .btn--twitter { background-size: contain; padding-left: 2em!important; }
-      .btn--github {  background: red; height: 20px; width: 20px; }
-
-      .btn--twitter { background:url(svg/twitter.svg) no-repeat 0 0; }
-      .btn--github  { background:url(svg/octocat.svg) no-repeat 0 0!important; }
-
-      a:hover i { opacity: 0.6; }
-
-      .mrs { margin-right: 1em; }
-
-    </style>
+<html lang="en" data-reactroot="" data-reactid="1" data-react-checksum="-926617876">
+  <head data-reactid="2">
+    <meta charset="utf-8" data-reactid="3" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" data-reactid="4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" data-reactid="5" />
+    <title data-reactid="6"></title>
   </head>
-  <body>
-    <header class="bb">
-      <h1 class="f1 tc man pt">links.css</h1>
-      <h2 class="ss tc title f3 pb">For nicer defaults</h2>
-      <div class="g tc pt1 pb">
-
-        <a href="http://github.com/mrmrs/links" class="mrs btn" target="_blank">
-          <i class="btn--github"> </i>
-          View on github
-        </a>
-
-        <a href="https://twitter.com/intent/tweet?text=Better default styles for links:&amp;url=http://mrmrs.io/links/" target="_blank" class="btn">
-          <i class="btn--twitter"> </i>
-          Tweet This
-        </a>
-        <br>
-        <br>
-        <br>
-        <small>- install with npm -</small>
-<pre>
-<code class="f2">
-npm install --save-dev links.css
-</code>
-</pre>
-      </div>
-    </header>
-    <main class="g">
-      <h2 class="title pt">About</h2>
-      <p class="f1">
-        For <a href="http://www.w3.org/TR/html401/present/styles.html" class="link">default link styles</a> I want - nice, subtle color animations. 
-        I want nicer colors that meet accessibility guidelines.
-        And I don't want visited links to be styled differently then regular links. 
-        This css modules solves those problems for me in a tidy 155B of css. 
-      </p>
-      <div class="pt">
-        <h2 class="title">The palette</h2>
-        <a href="#" style="color:#005BAC" class="f1 link"> :link</a><br>
-        <a href="#" style="color:#005BAC" class="f1 link"> :visited</a><br>
-        <a href="#" style="color:#7fdbff" class="f1 link"> :hover</a><br>
-        <a href="#" style="color:#007BE6" class="f1 link"> :active</a>
-      </div>
-      <div class="pt">
-        <h2 class="title">Examples</h2>
-        <a href="http://mrmrs.io"       title="A sample text link" class="f1">underlined link</a><br><br>
-        <a href="http://mrmrs.io/links" title="yes"                class="f1 link">simple link</a>
-      </div>
-      <div class="prose-example">
-        <h3 class="mt">Links in prose</h3>
-        <p class="f1">
-          Links in browsers should be better by default. 
-          The <a href="http://clrs.cc" class="link">default colors</a> are horrid. The lack of
-          subtle transitions between state changes leaves all my users sitting around without 'delight'.
-          So <a href="http://github.com/mrmrs/links" title="Links by @mrmrs">links.css</a> is a result of
-          typing the same silly css over and over again. It's a very small css module that gives you
-          better links by default. It is unobtrusive and degrades gracefully across every browser.
-        </p>
-      </div>
-      <section>
-        <h2 class="title mt">The Code</h2>
-      <h2 class="thin f2 pt1">html</h2>
-<pre>
-<code>
-&lt;a href="http://mrmrs.io" title="A sample text link"&gt;underlined link&lt;/a&gt;
-&lt;a href="http://mrmrs.io/links" title="A sample text link" class="link"&gt;simple link&lt;/a&gt;
-</code>
-</pre>
-
-      <h2 class="thin f2 pt1">css</h2>
-<pre class="pb">
-<code>
-a {
-  transition: color .4s;
-  color: #265C83;
-}
-
-a:link, 
-a:visited { color: #265C83; }
-a:hover   { color: #7FDBFF; }
-a:active  { 
-  transition: color .3s;
-  color: #007BE6; 
-}
-
-.link { text-decoration: none; }
-</code>
-</pre>
-      <p class="f3">
-        <em>Note:</em><br>
-        This is such a small css module you'll want to include it as a partial in your 
-        preprocessor setup - or you'll want to just copy the css into the top of your 
-        sites css file.
-      </p>
-</section>
-    </main>
-    <footer class="bt">
-      <div class="g">
-        <p>Built by <a href="http://mrmrs.io" title="adam morse - designer in sf" class="link">mrmrs</a></p>
-        <small>license: MIT</small>
-      </div>
-    </footer>
+  <body style="margin:0;" data-reactid="7">
+    <div class="Xv" style="font-family:-apple-system, BlinkMacSystemFont, sans-serif;font-weight:400;line-height:1.5;color:#111;background-color:#fff;" data-reactid="8">
+      <header style="display:flex;align-items:center;justify-content:center;text-align:left;min-height:100vh;padding-top:24px;padding-bottom:24px;padding-left:18px;padding-right:18px;color:#111;background-color:#ff0073;background-image:url(undefined);background-size:cover;background-position:center;background-blend-mode:multiply;"
+      data-reactid="9">
+        <div style="max-width:1024px;flex:1 1 auto;" data-reactid="10">
+          <h1 class="Heading" style="box-sizing:border-box;font-family:inherit;font-weight:600;line-height:1.25;h0:[object Object];h1:[object Object];h2:[object Object];h3:[object Object];h4:[object Object];h5:[object Object];h6:[object Object];font-size:31px;margin:0;"
+          data-reactid="11">Hello world</h1>
+          <p class="Text" style="box-sizing:border-box;font-size:19px;margin:0;" data-reactid="12">Welcome to your new Compositor site. Edit the styles and content then build to get started.</p>
+          <div style="box-sizing:border-box;margin-left:-12px;margin-right:-12px;" data-reactid="13">
+            <a href="twitter.com/mrmrs_" class="Button" style="box-sizing:border-box;font-family:inherit;font-size:inherit;font-weight:600;display:inline-block;margin:12px;padding-top:6px;padding-bottom:6px;padding-left:12px;padding-right:12px;border:0;cursor:pointer;border-radius:2px;color:#fff;background-color:#08e;text-decoration:none;"
+            data-reactid="14">Follow me on twitter</a> 
+            <a href="http://github.com" class="Button" style="box-sizing:border-box;font-family:inherit;font-size:inherit;font-weight:600;display:inline-block;margin:12px;padding-top:6px;padding-bottom:6px;padding-left:12px;padding-right:12px;border:0;cursor:pointer;border-radius:2px;color:#fff;background-color:#08e;text-decoration:none;"
+            data-reactid="15">View on GitHub</a> 
+            <div style="display:table;clear:both;" data-reactid="16"></div>
+          </div>
+        </div>
+      </header>
+      <section style="padding-top:36px;padding-bottom:36px;text-align:left;background-size:cover;background-position:center;color:white;background-color:#1b3c55;" data-reactid="17">
+        <div style="margin-left:auto;margin-right:auto;max-width:1024px;" data-reactid="18">
+          <div style="display:inline-block;vertical-align:middle;padding-top:30px;padding-bottom:30px;padding-left:18px;padding-right:18px;min-width:58.333333333333336%;max-width:100%;width:calc(409600px - 64000%);" data-reactid="19">
+            <h2 class="Heading" style="box-sizing:border-box;font-family:inherit;font-weight:600;line-height:1.25;h0:[object Object];h1:[object Object];h2:[object Object];h3:[object Object];h4:[object Object];h5:[object Object];h6:[object Object];font-size:29px;margin:0;"
+            data-reactid="20">Social</h2>
+            <div style="box-sizing:border-box;margin-left:-12px;margin-right:-12px;" data-reactid="21">
+              <a href="twitter.com/mrmrs_" class="Button" style="box-sizing:border-box;font-family:inherit;font-size:inherit;font-weight:600;display:inline-block;margin:12px;padding-top:6px;padding-bottom:6px;padding-left:12px;padding-right:12px;border:0;cursor:pointer;border-radius:2px;color:#fff;background-color:#08e;text-decoration:none;"
+              data-reactid="22">Follow me on twitter</a> 
+              <a href="http://github.com" class="Button" style="box-sizing:border-box;font-family:inherit;font-size:inherit;font-weight:600;display:inline-block;margin:12px;padding-top:6px;padding-bottom:6px;padding-left:12px;padding-right:12px;border:0;cursor:pointer;border-radius:2px;color:#fff;background-color:#08e;text-decoration:none;"
+              data-reactid="23">View on GitHub</a> 
+              <div style="display:table;clear:both;" data-reactid="24"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer style="padding-top:12px;padding-bottom:12px;padding-left:18px;padding-right:18px;margin-top:12px;border-color:#ddd;border-top-style:solid;border-top-width:2px;" data-reactid="25">
+        <div data-reactid="26">
+          <a href="http://twitter.com/mrmrs_" class="Link" style="box-sizing:border-box;color:inherit;margin-right:12px;" data-reactid="27">Twitter</a> 
+          <a href="http://github.com/mrmrs" class="Link" style="box-sizing:border-box;color:inherit;margin-right:12px;" data-reactid="28">GitHub</a> 
+          <a href="http://unsplash.com/mrmrs" class="Link" style="box-sizing:border-box;color:inherit;margin-right:12px;" data-reactid="29">Unsplash</a> 
+          <a href="http://instagram.com/mrmrs_" class="Link" style="box-sizing:border-box;color:inherit;margin-right:12px;" data-reactid="30">Instagram</a> 
+        </div>
+        <div data-reactid="31">
+          <p class="Text" style="box-sizing:border-box;font-size:17px;margin:0;" data-reactid="32">
+            <small data-reactid="33">This is my own personal playground site.</small> 
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
-
