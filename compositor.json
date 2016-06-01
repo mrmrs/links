@@ -115,6 +115,10 @@
     {
       "component": "section/BigSection",
       "heading": "Untitled"
+    },
+    {
+      "component": "section/BigSection",
+      "heading": "Untitled"
     }
   ]
 }
