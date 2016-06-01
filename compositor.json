@@ -113,7 +113,7 @@
       "meta": "This is my own personal playground site."
     },
     {
-      "component": "section/BigSection",
+      "component": "profile/BasicProfile",
       "heading": "Tupac's Block",
       "subhead": "Best part of th website"
     },
