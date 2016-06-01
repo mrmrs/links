@@ -6,17 +6,17 @@
   },
   "style": {
     "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
-    "fontWeight": 400,
-    "bold": 600,
+    "fontWeight": 700,
+    "bold": 800,
     "lineHeight": 1.5,
     "typeScale": [
-      31,
-      29,
-      23,
+      48,
+      32,
+      24,
+      21,
       19,
-      17,
-      13,
-      11
+      16,
+      12
     ],
     "body": {
       "margin": 0
@@ -38,15 +38,15 @@
     },
     "space": [
       0,
-      6,
-      12,
-      18,
-      24,
-      30,
-      36
+      5,
+      8,
+      13,
+      21,
+      34,
+      55
     ],
     "colors": {
-      "text": "#111",
+      "text": "#333",
       "background": "#fff",
       "border": "#ddd",
       "primary": "#08e",
