@@ -111,6 +111,10 @@
         }
       ],
       "meta": "This is my own personal playground site."
+    },
+    {
+      "component": "section/BigSection",
+      "heading": "Untitled"
     }
   ]
 }
