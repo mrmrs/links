@@ -90,5 +90,7 @@
         }
       ]
     }
-  ]
+  ],
+  "title": "Links",
+  "description": "An open source project for nicer links"
 }
