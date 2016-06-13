@@ -59,10 +59,5 @@
       "radius": 2
     }
   },
-  "content": [
-    {
-      "component": "section/BigSection",
-      "heading": "Untitled"
-    }
-  ]
+  "content": []
 }
