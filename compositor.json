@@ -61,20 +61,6 @@
   },
   "content": [
     {
-      "component": "section/PrimaryBigSection",
-      "heading": "Social",
-      "links": [
-        {
-          "href": "twitter.com/mrmrs_",
-          "text": "Follow me on twitter"
-        },
-        {
-          "href": "http://github.com",
-          "text": "View on GitHub"
-        }
-      ]
-    },
-    {
       "component": "footer/BasicFooter",
       "heading": "Copyright 2016",
       "links": [
