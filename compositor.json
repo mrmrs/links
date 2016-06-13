@@ -61,19 +61,6 @@
   },
   "content": [
     {
-      "component": "nav/AbsoluteNav",
-      "links": [
-        {
-          "href": "https://github.com/mrmrs/links",
-          "text": "GitHub"
-        },
-        {
-          "href": "https://npmjs.com/package/links.css",
-          "text": "npm"
-        }
-      ]
-    },
-    {
       "component": "header/BannerHeader",
       "heading": "links",
       "subhead": "Better default styles for text links",
