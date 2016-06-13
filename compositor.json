@@ -91,19 +91,6 @@
       "html": "<h1 id=\"links\">LINKS</h1>\n<p>Better default link styles for your css.\nBecause HAVE YOU SEEN THE BLUE AND RED they chose? Garish at best.</p>\n<p>I trust you have time to read 8 lines of code.</p>\n<h2 id=\"dev-setup\">Dev setup</h2>\n<p>If you want to modify sass/links.scss at all you can use the\nprovided gulp tasks. To do that:</p>\n<pre><code>cd links &amp;&amp; npm install . &amp;&amp; gulp\n</code></pre><h1 id=\"author\">Author</h1>\n<p><a href=\"http://mrmrs.cc\" title=\"Adam Morse - Designer Developer\">MRMRS</a></p>\n<h1 id=\"license\">License</h1>\n<p>The MIT License (MIT)</p>\n<p>Copyright (c) 2014 @mrmrs</p>\n<p>Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the &quot;Software&quot;), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:</p>\n<p>The above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.</p>\n<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.</p>\n"
     },
     {
-      "component": "nav/AbsoluteNav",
-      "links": [
-        {
-          "href": "https://github.com/mrmrs/links",
-          "text": "GitHub"
-        },
-        {
-          "href": "https://npmjs.com/package/links.css",
-          "text": "npm"
-        }
-      ]
-    },
-    {
       "component": "header/BannerHeader",
       "heading": "links",
       "subhead": "Better default styles for text links",
