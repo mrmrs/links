@@ -61,11 +61,6 @@
   },
   "content": [
     {
-      "component": "profile/BasicProfile",
-      "heading": "Tupac's Block",
-      "subhead": "Best part of th website"
-    },
-    {
       "component": "section/BigSection",
       "heading": "Untitled"
     }
