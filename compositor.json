@@ -5,24 +5,21 @@
     "xv": "1.0.0"
   },
   "style": {
-    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
-    "fontWeight": 700,
-    "bold": 800,
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "fontWeight": 400,
+    "bold": 400,
     "lineHeight": 1.5,
     "typeScale": [
       48,
       32,
       24,
-      21,
-      19,
+      20,
       16,
+      14,
       12
     ],
-    "body": {
-      "margin": 0
-    },
     "heading": {
-      "fontFamily": "inherit",
+      "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
       "fontWeight": 600,
       "lineHeight": 1.25,
       "fontStyle": null,
@@ -36,6 +33,7 @@
       "h5": {},
       "h6": {}
     },
+    "alternativeText": {},
     "space": [
       0,
       5,
@@ -45,6 +43,10 @@
       34,
       55
     ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
     "colors": {
       "text": "#333",
       "background": "#fff",
@@ -57,11 +59,17 @@
     "border": {
       "width": 2,
       "radius": 2
+    },
+    "link": {},
+    "button": {},
+    "input": {},
+    "body": {
+      "margin": 0
     }
   },
   "content": [
     {
-      "component": "header/BannerHeader",
+      "component": "header/LightBannerHeader",
       "heading": "links",
       "subhead": "Better default styles for text links",
       "links": [
